@@ -56,31 +56,38 @@ body {
   margin: 6px 0;
 }
 
-/* ===== 倒计时 ===== */
-.countdown #countdown {
+/* ===== 倒计时横向 ===== */
+.countdown-row {
   display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
+  gap: 12px;
+  margin-top: 20px;
+  overflow-x: auto;
+  padding-bottom: 4px;
 }
 
-.countdown div {
+.time-box {
+  min-width: 80px;
   background: #000;
   color: #fff;
-  border-radius: 14px;
-  padding: 12px 0;
-  width: 22%;
+  border-radius: 16px;
+  padding: 14px 10px;
   text-align: center;
+  flex-shrink: 0;
 }
 
-.countdown span {
-  font-size: 24px;
-  font-weight: bold;
+.time-box span {
   display: block;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
 }
 
-.countdown small {
+.time-box em {
+  font-style: normal;
   font-size: 12px;
   opacity: 0.7;
+  margin-top: 6px;
+  display: block;
 }
 
 /* ===== 按钮 ===== */
@@ -94,6 +101,27 @@ body {
   text-decoration: none;
   margin-top: 14px;
   font-size: 15px;
+}
+
+/* ===== 图片展示 ===== */
+.image-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.reveal-img {
+  width: 100%;
+  border-radius: 16px;
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  transition: all 0.9s ease;
+}
+
+.reveal-img.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 /* ===== 地图图片（可选） ===== */
