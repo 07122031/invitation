@@ -3,43 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <title>邀请函</title>
+  <title>婚礼邀请函</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
 
+    <!-- 封面 -->
     <section class="hero">
-      <h1>诚挚邀请</h1>
-      <p class="subtitle">欢迎参加我们的聚会</p>
+      <h1 class="title">我们结婚了</h1>
+      <p class="subtitle">诚挚邀请您参加我们的婚礼</p>
     </section>
 
-    <section class="card">
-      <h2>活动信息</h2>
-      <p>📅 时间：2026 年 2 月 18 日 18:30</p>
-      <p>📍 地点：台北 · 某某餐厅</p>
-      <p>🎉 主题：朋友小聚</p>
+    <!-- 倒计时 -->
+    <section class="card countdown fade-up">
+      <h2>距离婚礼还有</h2>
+      <div id="countdown">
+        <div><span id="days">0</span><small>天</small></div>
+        <div><span id="hours">0</span><small>时</small></div>
+        <div><span id="minutes">0</span><small>分</small></div>
+        <div><span id="seconds">0</span><small>秒</small></div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>活动说明</h2>
-      <p>
-        这是一次久违的相聚，  
-        希望你能来，一起吃饭、聊天、放松。
-      </p>
+    <!-- 婚礼信息 -->
+    <section class="card fade-up">
+      <h2>婚礼信息</h2>
+      <p>📅 日期：2026 年 2 月 18 日</p>
+      <p>⏰ 时间：18:30</p>
+      <p>📍 地点：台北某某酒店</p>
     </section>
 
-    <section class="card">
-      <h2>确认参加</h2>
-      <a class="btn" href="https://docs.google.com/forms/xxxx" target="_blank">
-        点击确认是否参加
+    <!-- 地图 -->
+    <section class="card fade-up">
+      <h2>婚礼地点</h2>
+      <p>台北某某酒店</p>
+
+      <!-- 可选：地图封面图 -->
+      <!-- <img src="map.jpg" class="map-img" /> -->
+
+      <a class="btn map"
+         href="https://www.google.com/maps?q=台北某某酒店"
+         target="_blank">
+        📍 打开地图导航
       </a>
     </section>
 
-    <footer>
-      <p>期待你的到来 💛</p>
-    </footer>
+    <!-- 结尾 -->
+    <section class="footer fade-up">
+      <p>期待与你相见 💍</p>
+    </section>
 
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
