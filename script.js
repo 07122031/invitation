@@ -15,7 +15,6 @@ document.querySelectorAll(".fade-up").forEach(el => {
 });
 
 /* ===== 婚礼倒计时 ===== */
-/* ⚠️ 改成你的婚礼时间 */
 const weddingTime = new Date("2026-02-18T18:30:00").getTime();
 
 function updateCountdown() {
@@ -39,3 +38,8 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
+/* ===== 图片滚动展示 ===== */
+document.querySelectorAll(".reveal-img").forEach(img => {
+  observer.observe(img);
+});
