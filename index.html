@@ -19,11 +19,23 @@
     <!-- 倒计时 -->
     <section class="card countdown fade-up">
       <h2>距离婚礼还有</h2>
-      <div id="countdown">
-        <div><span id="days">0</span><small>天</small></div>
-        <div><span id="hours">0</span><small>时</small></div>
-        <div><span id="minutes">0</span><small>分</small></div>
-        <div><span id="seconds">0</span><small>秒</small></div>
+      <div id="countdown" class="countdown-row">
+        <div class="time-box">
+          <span id="days">0</span>
+          <em>天</em>
+        </div>
+        <div class="time-box">
+          <span id="hours">0</span>
+          <em>时</em>
+        </div>
+        <div class="time-box">
+          <span id="minutes">0</span>
+          <em>分</em>
+        </div>
+        <div class="time-box">
+          <span id="seconds">0</span>
+          <em>秒</em>
+        </div>
       </div>
     </section>
 
@@ -35,12 +47,22 @@
       <p>📍 地点：台北某某酒店</p>
     </section>
 
+    <!-- 图片展示 -->
+    <section class="card fade-up">
+      <h2>我们的瞬间</h2>
+      <div class="image-list">
+        <img src="img1.jpg" class="reveal-img" />
+        <img src="img2.jpg" class="reveal-img" />
+        <img src="img3.jpg" class="reveal-img" />
+      </div>
+    </section>
+
     <!-- 地图 -->
     <section class="card fade-up">
       <h2>婚礼地点</h2>
       <p>台北某某酒店</p>
 
-      <!-- 可选：地图封面图 -->
+      <!-- 可选地图封面 -->
       <!-- <img src="map.jpg" class="map-img" /> -->
 
       <a class="btn map"
